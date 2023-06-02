@@ -12,7 +12,8 @@ def main():
     sock = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
     sock.connect ((bdAddr, port))
 
-    sock.send ("Hello Blue World!!")
+    while (1):
+        sock.send ("Hello Blue World!!")
 
     sock.close()
 
