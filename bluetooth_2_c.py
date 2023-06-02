@@ -2,6 +2,7 @@
 
 
 import bluetooth
+import time
 
 def main():
     
@@ -14,6 +15,8 @@ def main():
 
     for i in range(1,101):
         sock.send ("Hello Blue World!! " + str(i))
+
+        time.sleep(1)
 
     sock.close()
 
