@@ -2,7 +2,7 @@ import bluetooth
 
 def main():
 
-    targetName = 'panda'
+    targetName = 'jaypc'
     targetAddress = None
 
     nearbyDevices = bluetooth.discover_devices()
