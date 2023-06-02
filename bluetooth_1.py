@@ -4,7 +4,7 @@
 import bluetooth
 
 def main():
-    
+
     serverSock = bluetooth.BluetoothSocket( bluetooth.RFCOMM)
 
     port = 1 
@@ -14,8 +14,9 @@ def main():
     clientSock, address = serverSock.accept()
     print ("Accepted connection from: ", address)
 
-    data = clientSock.recv(1024)
-    print ("recieved [%s]" % data)
+    while (1):
+        data = clientSock.recv(1024)
+        print ("recieved [%s]" % data)
 
     clientSock.close()
     serverSock.close()

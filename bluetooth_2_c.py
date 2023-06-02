@@ -12,8 +12,8 @@ def main():
     sock = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
     sock.connect ((bdAddr, port))
 
-    while (1):
-        sock.send ("Hello Blue World!!")
+    for i in range(1,101):
+        sock.send ("Hello Blue World!! ", i)
 
     sock.close()
 
