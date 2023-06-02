@@ -2,7 +2,7 @@
 
 
 import bluetooth
-import time
+from time import sleep
 
 def main():
     
@@ -13,10 +13,13 @@ def main():
     sock = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
     sock.connect ((bdAddr, port))
 
-    for i in range(1,101):
-        sock.send ("Hello Blue World!! " + str(i))
+    while (1):
+        for i in range(1,5):
+            sock.send ("Hello Blue World!! " + str(i))
 
-        time.sleep(1)
+            sleep(1)
+        
+        sleep(4)
 
     sock.close()
 

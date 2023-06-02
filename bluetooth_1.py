@@ -2,6 +2,7 @@
 
 
 import bluetooth
+from time import sleep
 
 def main():
 
@@ -18,8 +19,7 @@ def main():
         data = clientSock.recv(1024)
         print ("recieved [%s]" % data)
 
-    clientSock.close()
-    serverSock.close()
+
 
 
 if __name__ == '__main__':
