@@ -13,7 +13,7 @@ def main():
     sock.connect ((bdAddr, port))
 
     for i in range(1,101):
-        sock.send ("Hello Blue World!! " + i)
+        sock.send ("Hello Blue World!! " + str(i))
 
     sock.close()
 
