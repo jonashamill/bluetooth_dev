@@ -8,10 +8,13 @@ def main():
 
     service.start_advertising("11111111-2222-3333-4444-555555555555",
                           1, 1, 1, 200)
-    sleep(15)
-    service.stop_advertising()
+    
+    print('Beacon running.')
 
-    print("Done.")
+    # sleep(15)
+    # service.stop_advertising()
+
+    # print("Done.")
 
 
 if __name__ == '__main__':
