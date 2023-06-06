@@ -18,6 +18,8 @@ def main():
     while (1):
         data = clientSock.recv(1024)
         print ("recieved [%s]" % data)
+    
+    return
 
 
 
