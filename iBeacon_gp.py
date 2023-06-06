@@ -16,8 +16,8 @@ def main():
         0x1A,  # Length of the remaining payload
         0xFF, 0x4C, 0x00, 0x02, 0x15,  # iBeacon identifier
     ] + [int(x, 16) for x in uuid.split("-")] + [
-        major >> 8, major & 0xFF,
-        minor >> 8, minor & 0xFF,
+        (major >> 8) & 0xFF, major & 0xFF,
+        (minor >> 8) & 0xFF, minor & 0xFF,
         power
     ])
 
