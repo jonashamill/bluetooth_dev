@@ -14,7 +14,7 @@ def main():
     # sleep(15)
     service.stop_advertising()
 
-    # print("Done.")
+    print("Done.")
 
 
 if __name__ == '__main__':
