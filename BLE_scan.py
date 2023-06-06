@@ -1,11 +1,11 @@
 # BLE SCAN
 
 
-from gattlib import DiscoveryService
+from bluetooth.ble import DiscoveryService
 from time import sleep
 
 def main():
-    service = DiscoveryService()
+    service = DiscoveryService("hcio")
     devices = service.discover(2)
 
     for address, name in devices.items():
