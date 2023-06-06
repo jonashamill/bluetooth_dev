@@ -2,7 +2,7 @@ import bluetooth
 
 def main():
 
-    targetName = 'jaypc'
+    targetName = input ('choose bt device: ')
     targetAddress = None
 
     nearbyDevices = bluetooth.discover_devices()
