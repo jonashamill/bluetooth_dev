@@ -11,7 +11,7 @@ def main():
     for address, name in devices.items():
         print("name: {}, address: {}".format(name, address))
 
-    return
+    
 
 
 if __name__ == '__main__':
