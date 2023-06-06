@@ -1,7 +1,7 @@
 # BLE SCAN
 
 
-from bluetooth.ble import DiscoveryService
+from gattlib import DiscoveryService
 from time import sleep
 
 def main():
