@@ -1,6 +1,6 @@
 # BLE BEACON
 
-from bluetooth.ble import BeaconService
+from gattlib import BeaconService
 from time import sleep
 
 def main():
