@@ -6,14 +6,10 @@ from time import sleep
 def main():
     service = BeaconService()
 
-    # service.start_advertising("3a6e4db3-4ebe-49d4-b16c-3a537deef82f",
-    #                       1, 1, 1, 200)
-    
-
-    service.start_advertising("leo-rover",
+    service.start_advertising("3a6e4db3-4ebe-49d4-b16c-3a537deef82f",
                           1, 1, 1, 200)
-
-
+    
+    
     input('Beacon running.')
 
     # sleep(15)
