@@ -9,6 +9,8 @@ def main():
     service.start_advertising("3a6e4db3-4ebe-49d4-b16c-3a537deef82f",
                           1, 1, 1, 200)
     
+    service.change_advertisement_data(service.ADVERTISEMENT_NAME_COMPLETE, "Leo Beacon")
+    
     
     input('Beacon running.')
 
