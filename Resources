@@ -1,0 +1,20 @@
+Resources:
+
+
+
+An Introduction to Bluetooth Programming:
+https://people.csail.mit.edu/albert/bluez-intro/x339.html#pbz-adv-async
+
+https://people.csail.mit.edu/albert/bluez-intro/index.html
+
+pybluez documentation:
+https://code.google.com/archive/p/pybluez/wikis/Documentation.wiki
+
+sending message with bt over python:
+https://stackoverflow.com/questions/7485750/sending-messages-or-datas-with-bluetooth-via-python
+
+pybluez pip:
+https://pypi.org/project/PyBluez/
+
+http over bt:
+https://stackoverflow.com/questions/47511294/how-can-we-use-http-over-bluetooth-low-energy-ble
